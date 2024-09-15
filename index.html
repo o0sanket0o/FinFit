@@ -11,7 +11,7 @@
         <h1>FinFit</h1>
         <div id="nav-content">
             <div id="sign">
-                <a href="#">Sign In</a>
+                <a href="./loginPage/login.html" target="_blank">Sign In</a>
             </div>
         </div>
     </div>
@@ -26,6 +26,7 @@
                         +$0.00
                     </p>
                 </div>
+                <div class="vertical"></div>
                 <div>
                     <h4>Expense</h4>
                     <p id="money-minus" class="money-minus">
@@ -35,7 +36,22 @@
             </div>
             <h3>History</h3>
             <div class="black"></div>
-            <ul>
+            <ul id="list">
+                <li class="minus">
+                   Cash <span>-$400</span> <button class="delete-btn">x</button>
+                </li>
+                <li class="minus">
+                   Cash <span>-$400</span> <button class="delete-btn">x</button>
+                </li>
+                <li class="minus">
+                   Cash <span>-$400</span> <button class="delete-btn">x</button>
+                </li>
+                <li class="minus">
+                   Cash <span>-$400</span> <button class="delete-btn">x</button>
+                </li>
+                <li class="minus">
+                   Cash <span>-$400</span> <button class="delete-btn">x</button>
+                </li>
                 <li class="minus">
                    Cash <span>-$400</span> <button class="delete-btn">x</button>
                 </li>
@@ -46,7 +62,7 @@
             <!-- I don't need any action in the form. -->
             <form id="form">
                 <div class="form-control">
-                    <label for="Text">Text</label>
+                    <label for="Text">Description of your transaction:</label>
                     <input type="text" id="text" placeholder="Enter text">
                 </div>
                 <div class="form-control">

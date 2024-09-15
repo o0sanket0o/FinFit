@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(33,79,172);
+    background: -moz-linear-gradient(164deg, rgba(33,79,172,1) 0%, rgba(157,135,250,1) 0%, rgba(148,182,233,1) 59%);
+    background: -webkit-linear-gradient(164deg, rgba(33,79,172,1) 0%, rgba(157,135,250,1) 0%, rgba(148,182,233,1) 59%);
+    background: linear-gradient(164deg, rgba(33,79,172,1) 0%, rgba(157,135,250,1) 0%, rgba(148,182,233,1) 59%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#214fac",endColorstr="#94b6e9",GradientType=1);
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#enter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247 247 247);
+    border-radius: 2px;
+    padding: 20px;
+    height: 50vh;
+    width: 25vw;
+    position: relative;
+}
+#header{
+    margin: 2rem;
+    color: rgb(157, 135, 250);
+
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+#content input{
+    padding: 10px;
+    margin: 10px 0;
+}
+button{
+    position: absolute;
+    bottom: 5rem;
+    border: 0px;
+    background-color: rgb(157, 135, 250);
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(247 247 247);
+    transition: 0.8s;
+}
+button:hover{
+    /* background-color: rgba(0,212,255,1); */
+    /* background-color: #94b6e9; */
+    background-color: #4b7bdb;
+    cursor: pointer;
+}

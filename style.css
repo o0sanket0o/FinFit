@@ -22,7 +22,7 @@ body{
 #nav a{
     color: white;
     text-decoration: none;
-    transition: 0.9s;
+    transition: 0.8s;
     font-size: 1.2rem;
 }
 #nav a:hover{
@@ -56,6 +56,13 @@ body{
     color: white;
     padding: 10px;
 }
+.vertical{
+    border: solid 1px rgb(187 187 187);
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    height: 100%;
+}
 .income-exp{
     display: flex;
     justify-content: center;
@@ -79,6 +86,14 @@ body{
 #add-transaction{
     margin-top: 15px;
 }
+#list{
+    display: flex;
+    flex-direction: column;
+}
+#list li{
+    list-style-type: none;
+}
+
 .black{
     border: solid 1px rgb(187 187 187);
     border-left: 0;
