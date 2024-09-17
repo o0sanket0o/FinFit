@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f4f8fe;
+
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4rem;
+        }
+        #first{
+            max-width: 45vw;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            line-height: 1.6rem;
+        }
+        #second{
+            max-width: 45vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #second{
+            height: 300px;
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+            
+        }
+        #image{
+            position: absolute;
+            animation: 5s infinite linear scroll;
+        }
+
+        @keyframes scroll{
+            0%{
+                top : 0%
+            }
+            50%{
+                top:-50%
+            }
+            90%{
+                top: -90%;
+            }
+            95%{
+                top: -95%;
+            }
+            99%{
+                top: -99%
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 style="padding: 30px;">Our Partners</h1>
+        <div id="box">
+            <div id="first">
+                <h3>Join the 50,00,000 businesses using Razorpay</h3>
+                <div id="text">
+                    <p style="margin-bottom: 1.4rem;">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
+                    <p>Focus on your business while we handle the complexities of payments for you.</p>
+                </div>
+            </div>
+            <div id="second">
+                <div id="child"></div>
+                <img src="../Images/companies-f772fc25.png" alt="" height="1000px" width="400px" id="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -6,11 +6,11 @@ body{
     min-width: 100vw;
     min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: rgb(33,79,172);
-    background: -moz-linear-gradient(164deg, rgba(33,79,172,1) 0%, rgba(157,135,250,1) 0%, rgba(148,182,233,1) 59%);
-    background: -webkit-linear-gradient(164deg, rgba(33,79,172,1) 0%, rgba(157,135,250,1) 0%, rgba(148,182,233,1) 59%);
-    background: linear-gradient(164deg, rgba(33,79,172,1) 0%, rgba(157,135,250,1) 0%, rgba(148,182,233,1) 59%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#214fac",endColorstr="#94b6e9",GradientType=1);
+    background: rgb(43,132,234);
+    background: -moz-linear-gradient(164deg, rgba(43,132,234,1) 0%, rgba(140,135,250,1) 79%, rgba(148,182,233,1) 100%);
+    background: -webkit-linear-gradient(164deg, rgba(43,132,234,1) 0%, rgba(140,135,250,1) 79%, rgba(148,182,233,1) 100%);
+    background: linear-gradient(164deg, rgba(43,132,234,1) 0%, rgba(140,135,250,1) 79%, rgba(148,182,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b84ea",endColorstr="#94b6e9",GradientType=1);
 }
 
 #main{
@@ -35,7 +35,7 @@ body{
 }
 #header{
     margin: 2rem;
-    color: rgb(157, 135, 250);
+    color: #2b84ea;
 
 }
 #content{
@@ -52,7 +52,7 @@ button{
     position: absolute;
     bottom: 5rem;
     border: 0px;
-    background-color: rgb(157, 135, 250);
+    background-color: #2b84ea;
     padding: 10px;
     font-size: 1rem;
     color: rgb(247 247 247);

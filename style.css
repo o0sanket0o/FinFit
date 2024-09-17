@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     min-width: 100vw;
     min-height: 100vh;
@@ -12,7 +15,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(157, 135, 250);
+    background-color: #2b84ea;
     color: white;
     padding: 20px;
 }
@@ -22,12 +25,17 @@ body{
 #nav a{
     color: white;
     text-decoration: none;
-    transition: 0.8s;
+    transition: 0.3s;
     font-size: 1.2rem;
 }
 #nav a:hover{
+    transition: 0.3s;
     color: black;
 
+}
+#sign{
+    display: flex;
+    gap: 1rem;
 }
 .container{
     margin: 4rem;
@@ -52,7 +60,7 @@ body{
     margin-bottom: 1.2rem;
 }
 #transaction-btn{
-    background-color: rgb(157, 135, 250);
+    background-color: #2b84ea;
     color: white;
     padding: 10px;
 }
@@ -125,4 +133,132 @@ body{
     border-radius: 2px;
     width: 100%;
     margin-top: 1em;
+}
+
+#second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn1{
+    background-color: #2b84ea;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 12px;
+    border: 0;
+    transition: 200;
+}
+#btn1:hover{
+    background-color: #0b72e7;
+    cursor: pointer;
+}
+#btn2{
+    background-color: rgb(247 247 247);
+    border: 0;
+    color: #2b84ea;
+}
+#btn2:hover{
+    cursor: pointer;
+}
+#secondImage{
+    max-height: 490px;
+    max-width: 590px;
+}
+#secondContent{
+    border: solid 2px black;
+    max-width: 75vw;
+    height: 100%;
+}
+#secondHead{
+    margin: 4vh 0 4vh 0;
+    display: block;
+    position: relative;
+}
+#btext{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding: 40px;
+}
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#btns{
+    display: flex;
+    gap: 20px;
+}
+#third{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    /* max-width: 70vw; */
+}
+
+#grid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    padding: 80px;
+    gap: 20px;
+}
+
+.knowlink{
+    color:#2b84ea; 
+    text-decoration: none;
+    margin-top: 1.8em;
+}
+.knowlink:hover{
+    color: black;
+}
+.gridbox{
+    border: solid 0.2px rgb(122, 122, 122);
+    border-radius: 4px;
+    min-width: 18vw;
+    min-height: 15vh;
+    height: auto;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto 0 auto;
+    margin-top: 1rem;
+    overflow: auto;
+    position: relative;
+}
+
+.gridbox h3{
+    position: absolute;
+    top: 1.2em;
+    left: 1em;
+}
+.gridbox p{
+    position: absolute;   
+    top: 3.9em;
+    left: 1.1em;
+}
+.gridbox a{
+    position: absolute;   
+    bottom: 1em;
+    left: 1.1em;
+    transition: 0.3s;
+}
+
+.gridbox:hover{
+    transition: 0.3s;
+    box-shadow: rgba(163, 163, 163, 0.4) 0px 10px 40px;
+    cursor: pointer;
 }
