@@ -87,7 +87,7 @@ body{
     color: rgb(134 223 168);
     margin: 10px 0;
 }
-#money-minus{
+#money-childList{
     color: rgb(205 94 78);
     margin: 10px 0;
 }
@@ -97,6 +97,7 @@ body{
 #list{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 #list li{
     list-style-type: none;
@@ -261,4 +262,58 @@ body{
     transition: 0.3s;
     box-shadow: rgba(163, 163, 163, 0.4) 0px 10px 40px;
     cursor: pointer;
+}
+
+/* green - #5ecd72 */
+/* red - #c1392b */
+.childList{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+}
+.childList, .plus {
+}
+.childList{
+    /* background-color: #c1392b; */
+    height: 100%;
+}
+.plus{
+    height: 100%;
+    /* background-color: #5ecd72; */
+}
+.delete-btn{
+    position: absolute;
+    left: -0.86rem;
+    color: white;
+    padding: 3px;
+    background-color: #e74c3c;
+    border: 0;
+    font-size: 1rem;
+    visibility: hidden;
+    /* transition: 0.5s; */
+    cursor: pointer;
+    bottom: 7px;
+}
+.childList:hover .delete-btn{
+    /* transition: 1s; */
+    visibility: visible;
+}
+.money{
+    position: absolute;
+    right: 15px;
+}
+.plus-color, .minus-color{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0.2px;
+    overflow: hidden;
+}
+.plus-color{
+    border-left: rgb(134 223 168) solid 5px;
+}
+.minus-color{
+    border-left: rgb(205 94 78) solid 5px;
+
 }
