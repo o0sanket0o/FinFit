@@ -81,13 +81,14 @@ body{
     min-width: 20vw;
     width: auto;
     margin-bottom: 1.3rem;
+    text-transform: uppercase;
     font-size: 1.1rem;
 }
 #money-plus{
     color: rgb(134 223 168);
     margin: 10px 0;
 }
-#money-childList{
+#money-minus{
     color: rgb(205 94 78);
     margin: 10px 0;
 }
@@ -178,6 +179,7 @@ body{
     border: solid 2px black;
     max-width: 75vw;
     height: 100%;
+    min-width: 1000px;
 }
 #secondHead{
     margin: 4vh 0 4vh 0;
@@ -208,15 +210,6 @@ body{
     margin: 0 auto 0 auto;
     /* max-width: 70vw; */
 }
-
-#grid{
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 5fr);
-    padding: 80px;
-    gap: 20px;
-}
-
 .knowlink{
     color:#2b84ea; 
     text-decoration: none;
@@ -225,36 +218,41 @@ body{
 .knowlink:hover{
     color: black;
 }
+#grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60vw;
+    gap: 20px;
+}
+
 .gridbox{
     border: solid 0.2px rgb(122, 122, 122);
     border-radius: 4px;
-    min-width: 18vw;
-    min-height: 15vh;
+    min-height: 22vh;
     height: auto;
-    padding: 35px;
+    padding: 20px 10px 25px 20px;
     display: flex;
     flex-direction: column;
-    height: auto;
     margin: 0 auto 0 auto;
+    gap: 1rem;
     margin-top: 1rem;
-    overflow: auto;
     position: relative;
 }
 
 .gridbox h3{
-    position: absolute;
     top: 1.2em;
     left: 1em;
 }
 .gridbox p{
-    position: absolute;   
     top: 3.9em;
     left: 1.1em;
+    margin-top: 10px;
 }
 .gridbox a{
     position: absolute;   
-    bottom: 1em;
-    left: 1.1em;
+    left: 20px;
+    bottom: 10px;
     transition: 0.3s;
 }
 
@@ -264,15 +262,11 @@ body{
     cursor: pointer;
 }
 
-/* green - #5ecd72 */
-/* red - #c1392b */
 .childList{
     width: 100%;
     padding: 10px;
     position: relative;
     background-color: white;
-}
-.childList, .plus {
 }
 .childList{
     /* background-color: #c1392b; */
@@ -317,3 +311,24 @@ body{
     border-left: rgb(205 94 78) solid 5px;
 
 }
+  
+  
+  @media (max-width: 900px) {
+    #grid {
+        grid-template-columns: 1.5fr 1.5fr;
+    }
+    .gridbox a{  
+        left: 20px;
+        bottom: 5px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #grid {
+        grid-template-columns: 1fr;
+    }
+    .gridbox a{  
+        left: 20px;
+        bottom: 5px;
+    }
+  }
