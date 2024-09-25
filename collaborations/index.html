@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
     <style>
         *{
             margin: 0;
@@ -15,13 +15,28 @@
             box-sizing: border-box;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             background-color: #f4f8fe;
-
+        }
+        #details{
+            width: 100vw;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            margin: 0 10px 0 10px;
+            margin-top: 2rem;
+            color: hsl(228.33deg 17.31% 40.78%);
+            margin-bottom: 5rem;
+        }
+        #partners{
+            font-size: 2rem;
         }
         #main{
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            padding: 10px;
         }
         #box{
             display: flex;
@@ -76,7 +91,16 @@
 </head>
 <body>
     <div id="main">
-        <h1 style="padding: 30px;">Our Partners</h1>
+        <h1 style="padding: 10px; font-size: 3rem;">About Us</h1>
+        <div style="border: #61cea6 solid 2px; width: 1rem;"></div>
+        <div id="details">
+            <p style="margin: 0 10rem 0 10rem;">
+                For a long time, we have felt that enabling frictionless transactions is a major problem and nobody seems to be doing it right. We decided to tackle it ourselves. Fintech aims to revolutionize money management for online businesses by providing clean, developer-friendly APIs and hassle-free integration. We offer a fast, affordable and secure way for merchants, schools, ecommerce and other companies to accept and disburse payments online, own a fully-functional current account and avail working capital loans.
+            </p>
+        </div>
+        <h2 id="partners" style="padding: 30px; font-weight: 400; padding-bottom: 10px;">Our Partners</h2>
+        <div style="border: #61cea6 solid 2px; width: 1rem;"></div>
+
         <div id="box">
             <div id="first">
                 <h3>Join the 50,00,000 businesses using Razorpay</h3>
@@ -90,6 +114,7 @@
                 <img src="../Images/companies-f772fc25.png" alt="" height="1000px" width="400px" id="image">
             </div>
         </div>
+        
     </div>
 </body>
 </html>
