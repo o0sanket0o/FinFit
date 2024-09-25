@@ -1,5 +1,7 @@
 # FinFit
 
+<img src="https://github.com/user-attachments/assets/6c2801c8-3d7a-4c32-a61e-e67f043ed4d9" alt="Logo" width="600" height="500">
+
 A simple web application to track your daily financial transactions. This project allows you to keep track of your income and expenses with an easy-to-use interface. All data is stored locally in your browser using local storage.
 
 ## Features
