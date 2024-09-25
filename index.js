@@ -51,7 +51,16 @@ enter.addEventListener("click", () => {
     if(!localStorage.getItem("email")){
         window.alert("Login first.");
     }else{
-        if(text && amount){
+        let check = 1;
+        for(let a = 0; a < text.length; ++a){
+            if(!((text[a] >= 'a' && text[a] <= 'z') || (text[a] >= 'A' && text[a] <= 'Z') || (text[a] <= '9' && text[a] >= '0') || text[a] == ' ')){
+                check = 0;
+            }
+        }
+        let index = 0; 
+        while(index < text.length && text[index] == ' ') ++index;
+        if(index >= text.length) check = 0;
+        if(text && amount && check){
             let obj = {
                 id : ind++,
                 content : text,
@@ -63,7 +72,7 @@ enter.addEventListener("click", () => {
             localStorage.setItem("history", JSON.stringify(arr));
             displayAll();
         }else{
-            console.log("Enter both the values correctly first.");
+            window.alert("Enter both the values correctly. No special characters are allowed.");
         }
     }
 })

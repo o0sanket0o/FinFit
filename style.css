@@ -321,6 +321,10 @@ body{
         left: 20px;
         bottom: 5px;
     }
+    #box{
+        display: flex;
+        flex-direction: column;
+    }
   }
   
   @media (max-width: 600px) {
@@ -332,3 +336,60 @@ body{
         bottom: 5px;
     }
   }
+
+  #box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+#businessCount{
+    max-width: 45vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    line-height: 1.6rem;
+}
+#companies{
+    max-width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#companies{
+    height: 300px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    
+}
+#image{
+    position: absolute;
+    animation: 5s infinite linear scroll;
+}
+
+@keyframes scroll{
+    0%{
+        top : 0%
+    }
+    50%{
+        top:-50%
+    }
+    90%{
+        top: -90%;
+    }
+    95%{
+        top: -95%;
+    }
+    99%{
+        top: -99%
+    }
+}
+#fourth{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
